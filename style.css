@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: hsla(0, 6%, 90%, 0.315);
+}
+section {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2% auto;
+}
+section .container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  height: auto;
+  background-color: hsla(0, 11%, 90%, 0.315);
+  box-shadow: 0px 0.1px 25px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 5%;
+}
+section .container .box {
+  position: relative;
+  display: flex;
+  /* display: block; */
+  border-radius: 5px;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 70%;
+  /* width: 50%; */
+}
+section .container .box .content {
+  position: relative;
+  display: flex;
+  /* display: block; */
+  flex-wrap: wrap;
+  padding: 3%;
+  color: white;
+  height: 350px;
+}
+section .container .box .content:nth-child(1) {
+  background-color: hsl(31, 77%, 52%);
+}
+section .container .box .content:nth-child(2) {
+  background-color: hsl(184, 100%, 22%);
+}
+section .container .box .content:nth-child(3) {
+  background-color: hsl(179, 100%, 13%);
+}
+section .container .box .content .textBox {
+  position: relative;
+}
+section .container .box .content img {
+  display: flex;
+  margin: 1%;
+  width: 40%;
+  height: 18%;
+}
+section .container .box .content .textBox h2 {
+  display: flex;
+  text-align: left;
+  font-family: "Big Shoulders Display";
+  margin: 5%;
+  font-size: 30px;
+}
+section .container .box .content .textBox p {
+  display: flex;
+  padding: 6%;
+  font-family: "Lexend Deca";
+  font-size: 13px;
+}
+section .container .box .content .textBox .btn {
+  display: flex;
+  margin-top: 20%;
+  padding: 15px 22px;
+  border-radius: 30px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+section .container .box .content .textBox .btn:hover {
+  border: 1px solid white;
+  background: none;
+  color: white;
+}
+section .container .box .content .textBox .btn1 {
+  color: hsl(31, 77%, 52%);
+}
+section .container .box .content .textBox .btn2 {
+  color: hsl(184, 100%, 22%);
+}
+section .container .box .content .textBox .btn3 {
+  color: hsl(179, 100%, 13%);
+}
+section .attribution {
+  display: block;
+  width: 100%;
+  font-size: 11px;
+  text-align: center;
+}
+section .attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 230px) and (max-width: 1000px) {
+  section .container .box {
+    display: block;
+    width: 50%;
+  }
+  section .container .box .content {
+    display: block;
+  }
+  section .container .box .content .textBox .btn {
+    margin-top: 10%;
+  }
+}
